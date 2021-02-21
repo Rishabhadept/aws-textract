@@ -23,9 +23,9 @@ public class TextractDemo {
     public static void main(String[] args) throws IOException {
        
 		clientBuilder.setCredentials(new AWSStaticCredentialsProvider(new
-				BasicAWSCredentials("AKIAUUISLQYIQX3NN5WD", "fggFZxzrJ2lhtBJQFLgRHSbE9urdp/YZY5w2yT5T")));
+				BasicAWSCredentials("<ACCESS_KEY>", "<ACCESS_SECRET>")));
 
-        String document="D:\\Rishabh\\kinesis-sample\\aws.textract\\input.jpg";
+        String document="<IMAGE_NAME_WITH_PATH>";
 		ByteBuffer imageBytes;
 
 		try (InputStream inputStream = new FileInputStream(new File(document))) {
